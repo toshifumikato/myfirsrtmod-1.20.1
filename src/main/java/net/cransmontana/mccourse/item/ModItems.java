@@ -15,9 +15,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MCCourseMod.MOD_ID);
 
     public static final RegistryObject<Item> ALEXANDRITE = ITEMS.register("alexandrite",
-            ()-> new Item(new Item.Properties().useItemDescriptionPrefix()
-                    .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse("modid:"
-                            +MCCourseMod.MOD_ID)))));
+            ()-> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
